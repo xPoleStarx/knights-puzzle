@@ -1,31 +1,51 @@
-```markdown
 # Logic Puzzle Solver
 
-This is a logic puzzle solver implemented in Python. It uses a logical sentence representation and provides a method to check if a knowledge base entails a query.
+This project is a logic puzzle solver implemented in Python. It uses logical sentences and symbolic representations to solve various puzzles. The main logic functionality is defined in the `logic.py` module, and the puzzles are solved in the `puzzle.py` script.
 
-## Puzzle Description
+## Installation
 
-There are four puzzles included in this solver:
+1. Clone the repository:
+   ```
+   git clone <repository_url>
+   ```
 
-1. **Puzzle 0**: A says "I am both a knight and a knave."
-2. **Puzzle 1**: A says "We are both knaves."
-3. **Puzzle 2**: A says "We are the same kind." B says "We are of different kinds."
-4. **Puzzle 3**: A says either "I am a knight." or "I am a knave.", but you don't know which. B says "A said 'I am a knave'." B says "C is a knave." C says "A is a knight."
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-To solve the puzzles, run the `puzzle.py` script:
+To run the logic puzzle solver, execute the following command in the terminal:
 
 ```
 python puzzle.py
 ```
 
-The script will print the solutions for each puzzle, indicating the identities of the knights and knaves based on the given information.
+This will solve multiple puzzles and display the solutions.
 
-## Requirements
+## Puzzles
 
-- Python 3.x
+The logic puzzle solver currently supports four different puzzles, which are defined in the `puzzle.py` script:
 
-```
+1. **Puzzle 0**: A says "I am both a knight and a knave."
+2. **Puzzle 1**: A says "We are both knaves." B says nothing.
+3. **Puzzle 2**: A says "We are the same kind." B says "We are of different kinds."
+4. **Puzzle 3**: A says either "I am a knight." or "I am a knave.", but you don't know which. B says "A said 'I am a knave'." B says "C is a knave." C says "A is a knight."
 
-Feel free to customize the content and structure of the `README.md` file as per your requirements.
+The solver uses logical inference and deduction to determine the solutions to these puzzles based on the given statements and rules.
+
+## Customization
+
+You can modify or create your own puzzles by editing the `puzzle.py` script. Simply define a new knowledge base using logical sentences and symbols from the `logic.py` module. Then add the knowledge base to the `puzzles` list and run the solver.
+
+Feel free to explore and experiment with different puzzles and logical statements.
+
+
+## Acknowledgments
+
+The logic puzzle solver is based on the concepts of formal logic and was inspired by various logic puzzle books and resources.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
